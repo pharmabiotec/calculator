@@ -1,0 +1,44 @@
+def topla(sayi1, sayi2):
+    return sayi1 + sayi2
+    
+
+
+def cikart(sayi1, sayi2):
+    return sayi1 - sayi2
+    
+
+
+def carp(sayi1, sayi2):
+    return sayi1 * sayi2
+    
+
+
+def bol(sayi1, sayi2):
+    if sayi2 == 0:
+        return "hatali sayi girdiniz"
+    return sayi1 / sayi2
+
+
+sayi1 = float(input("Birinci sayiyi giriniz"))
+sayi2 = float(input("İkinci sayiyi giriniz"))
+islem = input("İslemi seciniz (toplama,cikartma,carpma,bolme)")
+
+
+
+if islem == "toplama":
+    
+    print(f"Sonuç:{topla(sayi1, sayi2)}")
+
+elif islem == "cikartma":
+    
+    print(f"Sonuç:{cikart(sayi1, sayi2)}")
+
+elif islem == "carpma":
+    
+    print(f"Sonuç:{carp(sayi1, sayi2)}")
+
+elif islem == "bolme":
+    
+    print(f"Sonuç:{bol(sayi1, sayi2)}")
+else:
+    print("Hatali bir deger girdiniz.")
